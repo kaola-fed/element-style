@@ -1,0 +1,20 @@
+{
+  "name": "element-style",
+  "version": "1.0.0",
+  "description": "Custom styles for ElementUI",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaola-fed/element-style.git"
+  },
+  "keywords": [
+    "ui",
+    "style"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaola-fed/element-style/issues"
+  },
+  "homepage": "https://github.com/kaola-fed/element-style#readme"
+}

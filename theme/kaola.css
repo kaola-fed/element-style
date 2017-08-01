@@ -1,0 +1,325 @@
+/* 修改elementui的样式 */
+@define-mixin formitemSize {
+  /* 修改input的宽度,默认宽度100%,单需要固定宽时,可以设置size实现, 这个size不是规范里的内容,具体工程可以根据情况修改 */
+  &--mini {
+    width: 56px;
+    height: 32px;
+    .el-input__inner {
+      height: 32px;
+    }
+  }
+  &--small {
+    width: 104px;
+    height: 32px;
+    .el-input__inner {
+      height: 32px;
+    }
+  }
+  &--normal {
+    width: 180px;
+    height: 32px;
+   .el-input__inner {
+     height: 32px;
+   }
+  }
+  &--large {
+    width: 260px;
+    height: 32px;
+   .el-input__inner {
+     height: 32px;
+   }
+  }
+}
+
+/* Breadcrumb
+ -------------------------- */
+@component-namespace el {
+  @b breadcrumb {
+    @e item {
+      @e inner {
+        &, & a {
+          color:#333;
+        }
+      }
+
+      &:last-child {
+        .el-breadcrumb__item__inner,
+        .el-breadcrumb__item__inner a {
+          &, &:hover {
+              color: #151515;
+              cursor: text;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Button
+ -------------------------- */
+@component-namespace el {
+  @b button {
+    min-width: 80px;
+    @m secondary {
+      @mixin button-variant var(--button-secondary-color), var(--button-secondary-fill), var(--button-secondary-border);
+    }
+  }
+}
+
+/* Tabs
+ -------------------------- */
+@component-namespace el {
+  @b tabs {
+    @e item {
+      min-width: 104px;
+      padding: 0 16px;
+      text-align: center;
+    }
+
+    @m card {
+      > .el-tabs__header {
+        border-bottom-color: #DEEAF2;
+      }
+
+      > .el-tabs__header .el-tabs__item {
+        height: 32px;
+        line-height: 32px;
+        font-size: 12px;
+        border: 1px solid #DEEAF2;
+        border-radius: 2px 2px 0 0;
+        margin-right: 2px;
+        color: #333;
+        transition: all .3s cubic-bezier(.645,.045,.355,1);
+
+        &.is-active {
+          height: 33px;
+          color: #D9244E;
+          border-color: #DEEAF2;
+          border-bottom-color: #fff;
+          border-top: 2px solid #D9244E;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+/* Pagination
+ -------------------------- */
+@component-namespace el {
+  @b pagination {
+    color: #333;
+  }
+}
+
+/* Table
+ -------------------------- */
+@component-namespace el {
+  @b table {
+    border: none;
+    font-size: 12px;
+
+    &:before {
+      background-color: #ddd;
+    }
+    &:after {
+      background-color: #fff;
+    }
+
+    th {
+      text-align: center;
+      border-right: 1px solid #D8DEE4;
+      border-bottom: 1px solid #E3E7EB;
+    }
+
+    td {
+      border-bottom-color: #ECF2F9;
+    }
+
+    @e empty-text {
+      color: #666;
+    }
+
+    @m striped {
+      .el-table__body tr:nth-child(2n) td {
+        background-color: #F6F9FC;
+      }
+    }
+
+    @e body {
+      tr.hover-row > td {
+        background-color: #ECF2F9;
+      }
+    }
+
+    @m enable-row-hover {
+      .el-table__body tr:hover > td {
+        background-color: #ECF2F9;
+      }
+    }
+  }
+}
+
+/* FormItem
+ -------------------------- */
+@component-namespace el {
+  @b form-item {
+    margin-bottom: 16px;
+    @e label {
+      color: #333;
+      font-size: 12px;
+    }
+
+    @e content {
+      font-size: 12px;
+    }
+
+    @e error {
+      position: relative;
+      color: #F48080;
+      padding-top: 7px;
+
+      &:before {
+        font-family: 'icomoon';
+        content: '\e904';
+        margin-right: 6px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+/* Input
+ -------------------------- */
+@component-namespace el {
+  @b input {
+    @mixin formitemSize;
+
+    @e inner {
+      height: 32px;
+      border-color: #eee;
+      border-radius: 2px;
+      color: #333;
+
+      &::placeholder {
+        font-size: 12px!important;
+        color: #999;
+      }
+    }
+
+    @m large {
+      font-size: 12px;
+    }
+  }
+}
+
+/* InputGroup
+ -------------------------- */
+@component-namespace el {
+  @b input-group {
+    @e append {
+      background: none;
+      color: #999;
+      border-color: #eee;
+    }
+  }
+}
+
+/* Select
+ -------------------------- */
+@component-namespace el {
+  @b select {
+    .el-input .el-input__icon {
+      color: #ddd;
+    }
+  }
+}
+
+/* Dropdown
+ -------------------------- */
+@component-namespace el {
+  @b select-dropdown {
+    border-color: #eee;
+    box-shadow: none;
+
+    @e item {
+      color: #333;
+      padding: 7px;
+
+      &:hover, &.hover {
+        color: #333;
+        background-color: #F1F1F1;
+      }
+
+      &.selected, &.selected:hover {
+        color: #fff;
+        background-color:#E31436;
+      }
+    }
+  }
+}
+
+/* DatePicker
+ -------------------------- */
+@component-namespace el {
+  @b date-editor {
+    &.el-input {
+      width: 100%;
+    }
+  }
+}
+
+/* Dialog
+ -------------------------- */
+@component-namespace el {
+  @b dialog {
+    @e headerbtn {
+      background-color: transparent;
+      border: none;
+    }
+    @e headerbtn:focus {
+      outline: 0;
+    }
+    @e footer {
+      text-align: center;
+    }
+  }
+}
+
+/* MessageBox
+ -------------------------- */
+@component-namespace el {
+  @b message-box {
+    @e headerbtn {
+      background-color: transparent;
+      border: none;
+    }
+    @e headerbtn:focus {
+      outline: 0;
+    }
+    @e btns {
+      text-align: center;
+    }
+  }
+}
+
+/* Col
+ -------------------------- */
+@media (min-width: 1600px) {
+  @for $i from 0 to 24 {
+    .el-col-xlg-$i {
+      width: calc(1 / 24 * $(i) * 100)%;
+    }
+    .el-col-xlg-offset-$i {
+      margin-left: calc(1 / 24 * $(i) * 100)%;
+    }
+    .el-col-xlg-pull-$i {
+      position: relative;
+      right: calc(1 / 24 * $(i) * 100)%;
+    }
+    .el-col-xlg-push-$i {
+      position: relative;
+      left: calc(1 / 24 * $(i) * 100)%;
+    }
+  }
+}
