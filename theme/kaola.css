@@ -63,6 +63,10 @@
     @m secondary {
       @mixin button-variant var(--button-secondary-color), var(--button-secondary-fill), var(--button-secondary-border);
     }
+    @m text {
+      min-width: 0;
+      color: #0398ff;
+    }
   }
 }
 
@@ -130,10 +134,20 @@
       text-align: center;
       border-right: 1px solid #D8DEE4;
       border-bottom: 1px solid #E3E7EB;
+
+      /*表头都固定剧中*/
+      @when left {
+        text-align: center;
+      }
+
+      @when right {
+        text-align: center;
+      }
     }
 
     td {
       border-bottom-color: #ECF2F9;
+      border-right-width: 0;
     }
 
     @e empty-text {
@@ -164,7 +178,7 @@
  -------------------------- */
 @component-namespace el {
   @b form-item {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     @e label {
       color: #333;
       font-size: 12px;
@@ -175,10 +189,8 @@
     }
 
     @e error {
-      position: relative;
       color: #F48080;
-      padding-top: 7px;
-
+      padding-top: 4px;
       &:before {
         font-family: 'icomoon';
         content: '\e904';
@@ -209,6 +221,17 @@
 
     @m large {
       font-size: 12px;
+    }
+  }
+  @b textarea {
+    @e inner {
+      border-color: #eee;
+      border-radius: 2px;
+      color: #333;
+      &::placeholder {
+        font-size: 12px!important;
+        color: #999;
+      }
     }
   }
 }
@@ -273,6 +296,16 @@
  -------------------------- */
 @component-namespace el {
   @b dialog {
+    position: absolute;
+    left: 50%;
+    top: 10% !important;
+
+    @e header {
+      padding: 0;
+      margin: 20px 20px 0;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #eee;
+    }
     @e headerbtn {
       background-color: transparent;
       border: none;
@@ -280,8 +313,20 @@
     @e headerbtn:focus {
       outline: 0;
     }
+    @e title {
+      font-size: 12px;
+    }
+    @e body {
+      padding: 20px 40px;
+      color: #333;
+    }
     @e footer {
       text-align: center;
+    }
+    @e wrapper {
+      background-color: rgba(0, 0, 0, 0.7);
+      left: 180px;
+      top: 110px;
     }
   }
 }
@@ -299,6 +344,11 @@
     }
     @e btns {
       text-align: center;
+    }
+    @e wrapper {
+      background-color: rgba(0, 0, 0, 0.7);
+      left: 180px;
+      top: 110px;
     }
   }
 }
@@ -320,6 +370,50 @@
     .el-col-xlg-push-$i {
       position: relative;
       left: calc(1 / 24 * $(i) * 100)%;
+    }
+  }
+}
+
+/* 修改表格table的scroll问题 */
+@component-namespace el {
+     @b table {
+          @e fixed, fixed-right {
+              /*height: 100%;*/
+          }
+          @e body-wrapper {
+              overflow: auto;
+          }
+     }
+}
+
+/* dialog */
+@component-namespace el {
+  @b dialog {
+      
+  }
+}
+
+/* Tree 
+-------------------------- */
+@component-namespace el {
+  @b tree-node {
+    white-space: nowrap;
+
+    @e content {
+      line-height: 36px;
+      height: 36px;
+      cursor: pointer;
+
+      & > .el-checkbox,
+      & > .el-tree-node__expand-icon {
+        margin-right: 8px;
+      }
+      & > .el-checkbox {
+        vertical-align: middle;
+      }
+      &:hover {
+        background: #fff;
+      }
     }
   }
 }
