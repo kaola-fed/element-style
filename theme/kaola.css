@@ -323,11 +323,6 @@
     @e footer {
       text-align: center;
     }
-    @e wrapper {
-      background-color: rgba(0, 0, 0, 0.7);
-      left: 180px;
-      top: 110px;
-    }
   }
 }
 
