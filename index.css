@@ -109,44 +109,12 @@ html, body {
     }
   }
 
-  /*  详情页非编辑状态时如果没用formItem的行间距, 最后一行不要设置  */
-  /*@b row-detail {
-    margin-bottom: 20px;
-  }*/
-
   /* el-row 没有wrap属性设置, 自定义class实现 */
   @b flex-wrap {
     flex-wrap: wrap;
   }
 }
 
-/* 出库管理 的称重页面中的提示信息位置问题  */
-/*.vue_required {
-  @component-namespace el {
-    @b form-item {
-      @e error {
-        position: absolute;
-        padding-top: 4px;
-      }
-    }
-  }
-}*/
-/*登入页面提示的padding */
-/*.m-loginform {
-  @component-namespace el {
-    @b form-item {
-      @e error {
-        padding-top: 8px;
-      }
-    }
-  }
-}*/
-/* 报表管理模板的二级标题 */
-/*.u-title {
-    font-size: 14px;
-    border-bottom: 1px dashed #DEEAF2;
-    line-height: 2;
-}*/
 /*  card */
 .card{
     background: #fff;
@@ -157,11 +125,6 @@ html, body {
     margin-bottom: 20px;
     color: #333;
 }
-
-/*称重*/
-/*.u-weight-select {
-  width: 70px;
-}*/
 
 
 .u-line { height:1px; margin-bottom:10px; background:#DEEAF2; }
