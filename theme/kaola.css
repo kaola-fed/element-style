@@ -386,13 +386,6 @@
      }
 }
 
-/* dialog */
-@component-namespace el {
-  @b dialog {
-      
-  }
-}
-
 /* Tree 
 -------------------------- */
 @component-namespace el {
