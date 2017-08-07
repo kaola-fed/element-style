@@ -44,7 +44,7 @@
   -------------------------- */
   --border-width-base: 1px;
   --border-style-base: solid;
-  --border-color-base: var(--color-extra-light-silver);
+  --border-color-base: #ddd;
   --border-color-hover: var(--color-base-silver);
   --border-base: var(--border-width-base) var(--border-style-base) var(--border-color-base);
   --border-radius-base: 2px;
@@ -410,8 +410,8 @@
   --dialog-background-color: var(--color-secondary);
   --dialog-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   --dialog-tiny-width: 30%;
-  --dialog-small-width: 50%;
-  --dialog-large-width: 90%;
+  --dialog-small-width: 70%;
+  --dialog-large-width: 80%;
   --dialog-close-color: var(--color-extra-light-silver);
   --dialog-close-hover-color: var(--color-primary);
   --dialog-title-font-size: 16px;
@@ -430,7 +430,7 @@
   --pagination-fill: var(--color-white);
   --pagination-color: var(--link-color);
   --pagination-border-radius: 2px;
-  --pagination-button-color: var(--color-light-silver);
+  --pagination-button-color: #999;
   --pagination-button-size: 28px;
   --pagination-button-disabled-color: #e4e4e4;
   --pagination-button-disabled-fill: var(--color-white);
