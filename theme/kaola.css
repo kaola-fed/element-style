@@ -163,8 +163,6 @@
     @b dialog {
         @e wrapper {
             background-color: rgba(0, 0, 0, 0.7);
-            left: 180px;
-            top: 110px;
         }
         @e close {
             position: absolute;
@@ -177,6 +175,15 @@
             .el-button {
                 width: 80px;
             }
+        }
+    }
+}
+
+@component-namespace el {
+    @b message-box {
+        @e wrapper {
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 3333 !important;
         }
     }
 }
