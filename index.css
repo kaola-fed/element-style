@@ -2,8 +2,8 @@
 @import "./iconfont/style.css";
 @import "./reset.css";
 @import "./util.css";
-@import "./theme/element-ui-default/index.css";
-@import "./theme/kaola.css";
+@import "./theme/theme-chalk/index.scss";
+@import './theme/kaola.css;
 
 html, body {
   width: 100%;
