@@ -2,7 +2,7 @@
 @import "./iconfont/style.css";
 @import "./reset.css";
 @import "./util.css";
-@import "./theme/theme-chalk/src/index.scss";
+@import "./theme/theme-chalk/lib/index.css";
 @import "./theme/kaola.css";
 
 html, body {
