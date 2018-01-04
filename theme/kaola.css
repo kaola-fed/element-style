@@ -181,19 +181,6 @@
     }
 }
 
-/* Message
--------------------------- */
-@component-namespace el {
-    @b message-box {
-        @e wrapper {
-            background-color: rgba(0, 0, 0, 0.7);
-            left: 180px;
-            top: 110px;
-            z-index: 3333 !important;
-        }
-    }
-}
-
 /* Tree
 -------------------------- */
 @component-namespace el {
