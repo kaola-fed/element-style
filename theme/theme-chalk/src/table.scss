@@ -237,7 +237,7 @@
     border: $--table-border;
 
     @include share-rule(border-pseudo) {
-      content: '';
+      content: "";
       position: absolute;
       background-color: $--border-color-lighter;
       z-index: 1;
@@ -303,7 +303,7 @@
     box-shadow: $--table-fixed-box-shadow;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       bottom: 0;
