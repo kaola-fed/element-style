@@ -1,6 +1,6 @@
 {
   "name": "element-kaola",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "Custom styles for ElementUI",
   "scripts": {},
   "repository": {
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/kaola-fed/element-style/issues"
   },
-  "homepage": "https://github.com/kaola-fed/element-style#readme"
+  "homepage": "https://github.com/kaola-fed/element-style#readme",
+  "dependencies": {
+    "sass-loader": "^6.0.6"
+  }
 }
