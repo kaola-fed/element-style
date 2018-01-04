@@ -1,8 +1,10 @@
 {
   "name": "element-kaola",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Custom styles for ElementUI",
-  "scripts": {},
+  "scripts": {
+    "build": "gulp build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kaola-fed/element-style.git"
@@ -17,7 +19,16 @@
     "url": "https://github.com/kaola-fed/element-style/issues"
   },
   "homepage": "https://github.com/kaola-fed/element-style#readme",
-  "dependencies": {
-    "sass-loader": "^6.0.6"
-  }
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-sass": "^3.1.0",
+    "gulp-autoprefixer": "^4.0.0"
+  },
+  "main": "lib/index.css",
+  "style": "lib/index.css",
+  "files": [
+    "lib",
+    "src"
+  ]
 }
