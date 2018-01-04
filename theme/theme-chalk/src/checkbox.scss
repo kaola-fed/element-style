@@ -171,7 +171,7 @@
         border-color: $--checkbox-checked-input-border-color;
 
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           display: block;
           background-color: $--checkbox-checked-icon-color;

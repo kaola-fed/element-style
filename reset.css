@@ -19,7 +19,7 @@ abbr[title], acronym[title] { /* 注：1.ie6 不支持 abbr; 2.这里用了属�
   border-bottom: 1px dotted;
   cursor: help;
 }
-q:before, q:after { content: ''; }
+q:before, q:after { content: ""; }
 /* 重置表单元素 */
 legend { color: #000; } /* for ie6 */
 fieldset, img { border: none; } /* img 搭车：让链接里的 img 无边框 */

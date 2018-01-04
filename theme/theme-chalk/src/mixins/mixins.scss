@@ -116,7 +116,7 @@
 
 @mixin configurable-m($modifier, $E-flag: false) {
   $selector: &;
-  $interpolation: '';
+  $interpolation: "";
 
   @if $E-flag {
     $interpolation: $element-separator + $E-flag;
@@ -131,8 +131,8 @@
   }
 }
 
-@mixin spec-selector($specSelector: '', $element: $E, $modifier: false, $block: $B) {
-  $modifierCombo: '';
+@mixin spec-selector($specSelector: "", $element: $E, $modifier: false, $block: $B) {
+  $modifierCombo: "";
 
   @if $modifier {
     $modifierCombo: $modifier-separator + $modifier;
@@ -147,7 +147,7 @@
 
 @mixin meb($modifier: false, $element: $E, $block: $B) {
   $selector: &;
-  $modifierCombo: '';
+  $modifierCombo: "";
 
   @if $modifier {
     $modifierCombo: $modifier-separator + $modifier;

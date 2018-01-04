@@ -2,8 +2,8 @@
 @import "./iconfont/style.css";
 @import "./reset.css";
 @import "./util.css";
-@import "./theme/theme-chalk/index.scss";
-@import './theme/kaola.css;
+@import "./theme/theme-chalk/lib/index.css";
+@import "./theme/kaola.css";
 
 html, body {
   width: 100%;
@@ -65,7 +65,7 @@ html, body {
           height:15px;
           left:0;
           top:4px;
-          content:'';
+          content:"";
           background:#333;
         }
       }
@@ -130,5 +130,5 @@ html, body {
 .u-line { height:1px; margin-bottom:10px; background:#DEEAF2; }
 .u-table-btns { display: flex; justify-content: center; }
 .u-table-btns button { position: relative; margin-right: 10px; color: #0398ff; min-width: 0; }
-.u-table-btns button::after { content: '';position: absolute; top: 5px;right: -13px; width: 1px; height: 15px; background-color: #eceef2; }
+.u-table-btns button::after { content: "";position: absolute; top: 5px;right: -13px; width: 1px; height: 15px; background-color: #eceef2; }
 .u-table-btns button:last-child::after { display: none; }
