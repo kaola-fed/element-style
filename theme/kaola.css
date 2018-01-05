@@ -297,6 +297,8 @@
  -------------------------- */
 @component-namespace el {
     @b breadcrumb {
+        margin-bottom: 10px;
+
         @e inner {
             &, & a {
                 font-weight: normal;
