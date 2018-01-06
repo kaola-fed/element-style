@@ -59,14 +59,6 @@
             &:hover {
                 border-color: #e31436;
             }
-            &::after {
-                border: 2px solid #fff;
-                border-left: 0;
-                border-top: 0;
-                height: 8px;
-                left: 5px;
-                width: 4px;
-            }
         }
     }
     @b date-editor {
@@ -80,7 +72,14 @@
         }
     }
 }
-
+.el-checkbox__inner::after {
+    border: 2px solid #fff;
+    border-left: 0;
+    border-top: 0;
+    height: 8px;
+    left: 5px;
+    width: 4px;
+}
 /* Button
  -------------------------- */
 @component-namespace el {
@@ -179,6 +178,8 @@
     }
 }
 
+/* Message
+-------------------------- */
 @component-namespace el {
     @b message-box {
         @e wrapper {
