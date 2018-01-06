@@ -80,6 +80,9 @@
     left: 5px;
     width: 4px;
 }
+.el-checkbox__input.is-indeterminate .el-checkbox__inner:before {
+    height: 4px;
+}
 /* Button
  -------------------------- */
 @component-namespace el {
