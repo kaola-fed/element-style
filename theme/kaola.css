@@ -387,9 +387,6 @@
             vertical-align: baseline;
             margin-right: 10px;
         }
-        &:hover, &:focus {
-            background-color: #f6f9fc;
-        }
         @when active {
             color: #d9244e;
         }
@@ -448,18 +445,6 @@
             }
         }
         & .el-menu-item {
-            height: 32px;
-            line-height: 32px;
-            padding: 0 45px;
-            min-width: 200px;
-
-            &:hover {
-                background-color: #f6f9fc;
-                span {
-                    font-weight: bold;
-                    text-decoration: underline;
-                }
-            }
             @when active {
                 a {
                     span {
@@ -530,7 +515,23 @@
         }
     }
 }
-
+.el-submenu .el-menu-item {
+    height: 32px;
+    line-height: 32px;
+    padding: 0 45px;
+    min-width: 200px;
+}
+.el-menu-item:hover {
+    background-color: #f6f9fc;
+}
+.el-menu-item:hover span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.el-menu-item:hover, 
+.el-menu-item:focus {
+    background-color: #f6f9fc;
+}
 /* Message */
 @component-namespace el {
   @b message {
@@ -591,3 +592,4 @@
     margin: 0 5px;
     border: 1px solid #e4e7ed;
 }
+
