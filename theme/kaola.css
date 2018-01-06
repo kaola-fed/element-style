@@ -315,6 +315,17 @@
     color: #D9244E;
     margin-right: 8px;
 }
+
+/* Tag
+-------------------------- */
+@component-namespace el {
+    @b tag {
+        & + .el-tag {
+            margin-left: 10px;
+        }
+    }
+}
+
 /* Modal
 -------------------------- */
 .v-modal {
