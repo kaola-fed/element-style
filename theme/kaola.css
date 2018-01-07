@@ -83,6 +83,16 @@
 .el-checkbox__input.is-indeterminate .el-checkbox__inner:before {
     height: 4px;
 }
+.el-checkbox-group .el-checkbox {
+    margin-right: 30px;
+}
+.el-checkbox-group .el-checkbox:last-child {
+    margin-right: 0;
+}
+.el-checkbox + .el-checkbox {
+    margin-left: 0;
+}
+
 /* Button
  -------------------------- */
 @component-namespace el {
