@@ -596,7 +596,7 @@
     line-height: 36px;
 }
 .el-tabs--card>.el-tabs__header .el-tabs__item:first-child {
-    border-left: 1px solid #e4e7ed;`
+    border-left: 1px solid #e4e7ed;
 }
 .el-tabs__item {
     margin: 0 5px;
