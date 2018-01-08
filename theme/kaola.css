@@ -99,7 +99,6 @@
   @b button {
     font-size: 12px;
     min-width: 80px;
-    border: 1px solid #ddd;
     padding: 8px 16px;
     border-radius: 2px;
     @m text {
