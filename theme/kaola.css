@@ -20,7 +20,7 @@
         flex: 1;
         font-size: 12px;
         @e inner {
-            height: 32px !important; 
+            height: 32px; 
             border-color: #eee;
             border-radius: 2px;
             color: #333;
