@@ -11,7 +11,7 @@
   cursor: pointer;
   background: $--button-default-fill;
   border: $--border-base;
-  border-color: $--button-default-border;
+  border-color: #ddd;
   color: $--button-default-color;
   -webkit-appearance: none;
   text-align: center;
@@ -19,7 +19,7 @@
   outline: none;
   margin: 0;
   transition: .1s;
-  font-weight: $--button-font-weight;
+  font-weight: normal;
   @include utils-user-select(none);
   & + .el-button {
     margin-left: 10px;
@@ -29,8 +29,8 @@
 
   &:hover,
   &:focus {
-    color: $--color-primary;
-    border-color: $--color-primary-light-7;
+    color: #E31436;
+    border-color: #E31436;
     background-color: $--color-white;
   }
 
