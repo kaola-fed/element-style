@@ -269,11 +269,6 @@
             overflow-x: auto;
             position: relative;
         }
-        @e row {
-            .cell {
-                line-height: 1;
-            }
-        }
         @e body {
             tr.hover-row>td {
                 background-color: #ECF2F9;
