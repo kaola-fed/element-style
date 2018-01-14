@@ -73,7 +73,7 @@
     }
 }
 .el-range-editor.el-input__inner {
-    padding: 3px 5px;
+    min-width: 288px;
 }
 .el-checkbox__inner::after {
     border: 2px solid #fff;
