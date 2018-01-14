@@ -72,6 +72,9 @@
         }
     }
 }
+.el-range-editor.el-input__inner {
+    padding: 3px 5px;
+}
 .el-checkbox__inner::after {
     border: 2px solid #fff;
     border-left: 0;
@@ -255,6 +258,7 @@
             padding-left: 18px;
             overflow: hidden;
             padding-right: 18px;
+            line-height: 3;
         }
         &:before {
             background-color: #ddd;
