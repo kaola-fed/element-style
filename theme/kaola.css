@@ -72,8 +72,8 @@
         }
     }
 }
-.el-range-editor.el-input__inner {
-    min-width: 288px;
+.el-date-editor .el-range__close-icon {
+    margin-right: -7px; 
 }
 .el-checkbox__inner::after {
     border: 2px solid #fff;
