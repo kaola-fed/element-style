@@ -33,6 +33,14 @@ html, body {
       }
     }
   }
+}
+
+.u-line { height:1px; margin-bottom:10px; background:#DEEAF2; }
+
+
+/* 以下部分为保留用来兼容原有代码，新页面中不要使用 */
+
+@component-namespace g {
   /* 主要内容区块,白底圆角boxshadow */
   @b section {
     @e breadcrumb {
@@ -125,8 +133,6 @@ html, body {
   color: #333;
 }
 
-
-.u-line { height:1px; margin-bottom:10px; background:#DEEAF2; }
 .u-table-btns { display: flex; justify-content: center; }
 .u-table-btns button { position: relative; margin-right: 10px; color: #0398ff; min-width: 0; }
 .u-table-btns button::after { content: "";position: absolute; top: 5px;right: -13px; width: 1px; height: 15px; background-color: #eceef2; }
