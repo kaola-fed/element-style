@@ -33,6 +33,101 @@ html, body {
       }
     }
   }
+  /* 主要内容区块,白底圆角boxshadow */
+  @b section {
+    @e breadcrumb {
+      margin-bottom: 10px;
+
+      .icon-home {
+        color: #D9244E;
+        margin-right: 8px;
+      }
+    }
+
+    @e content {
+      padding: 20px 10px;
+      margin-bottom: 8px;
+      background: #fff;
+      box-shadow: 2px 2px 3px 0 rgba(34,52,73,0.1);
+      border-radius: 4px;
+
+      @e title {
+        position: relative;
+        font-size: 16px;
+        color: #333;
+        padding-left: 13px;
+        margin-bottom: 13px;
+
+      &:before {
+         position:absolute;
+         width:3px;
+         height:15px;
+         left:0;
+         top:4px;
+         content:"";
+         background:#333;
+       }
+      }
+
+      @m small {
+        font-weight: normal;
+        height: 44px;
+        line-height: 44px;
+        padding: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+    @e subContent {
+      margin: 0px 32px;
+      background: #fff;
+
+      @e subTitle {
+        font-size: 14px;
+        padding-bottom: 8px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+    }
+  }
+
+  /* 通用的分页样式 */
+  @b pagination {
+    text-align: right;
+    margin-top: 20px;
+  }
+
+  /* tab中的红色圆点 */
+  @b tab-dot {
+    display: inline;
+    .el-badge__content {
+      background-color: #D9244E;
+      &.is-fixed.is-dot {
+       right: -3px!important;
+      }
+    }
+  }
+
+  /* el-row 没有wrap属性设置, 自定义class实现 */
+  @b flex-wrap {
+    flex-wrap: wrap;
+  }
 }
 
+/*  card */
+.card {
+  background: #fff;
+  box-shadow: 2px 2px 3px 0 rgba(34,52,73,0.1);
+  border: 1px solid rgba(34,52,73,0.1);
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
 .u-line { height:1px; margin-bottom:10px; background:#DEEAF2; }
+.u-table-btns { display: flex; justify-content: center; }
+.u-table-btns button { position: relative; margin-right: 10px; color: #0398ff; min-width: 0; }
+.u-table-btns button::after { content: "";position: absolute; top: 5px;right: -13px; width: 1px; height: 15px; background-color: #eceef2; }
+.u-table-btns button:last-child::after { display: none; }
