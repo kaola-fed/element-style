@@ -624,3 +624,13 @@
     color: #D9244E;
     margin-right: 8px;
 }
+
+/*表格的loading高于弹窗的，这里处理成低于弹窗*/
+.el-loading-mask {
+    z-index: 2000;
+}
+/*表格的表头永远居中*/
+.el-table th.is-left,
+.el-table th.is-right {
+    text-align: center;
+}
