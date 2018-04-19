@@ -1,8 +1,10 @@
 {
   "name": "element-kaola",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Custom styles for ElementUI",
-  "scripts": {},
+  "scripts": {
+    "release": "npm config set registry https://registry.npmjs.org && ./publish.sh"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kaola-fed/element-style.git"
