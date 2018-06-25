@@ -588,6 +588,9 @@
       &.el-icon-warning {
         background-color: #e6a23c;
       }
+      &.el-icon-info {
+        background-color: #909399;
+      }
     }
   }
 
