@@ -3,6 +3,8 @@
     font-size: 12px;
     padding: 9px 16px;
     border-radius: 2px;
+    min-width: 80px;
+
     &:hover,
     &:focus {
         color: #1acac6;
@@ -46,6 +48,9 @@
     @include when(round) {
         line-height: 12px;
     }
+    @include when(circle) {
+        min-width: 0px;
+    }
     /*危险累按钮样式覆盖*/
     @include m(danger) {
         &.is-plain {
@@ -86,13 +91,10 @@
     @include m(text) {
         &:hover,
         &:focus {
-            background: #FFF;
-            border-color: #FFF;
+            background: transparent;
+            border-color: transparent;
+            color: #21D1C8;
         }
-        &:active {
-       
-        }
-
         &.is-disabled,
         &.is-disabled:hover,
         &.is-disabled:focus {
@@ -100,7 +102,7 @@
             color: #c0c4cc;
             cursor: not-allowed;
             background-image: none;
-            background-color: #fff;
+            background-color: transparent;
         }
     }
 }

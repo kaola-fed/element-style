@@ -21,6 +21,7 @@
 }
 
 @include b(select) {
+    width: 100%;
     .el-tag--info {
         color: #909399;
     }
