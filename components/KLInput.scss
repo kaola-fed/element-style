@@ -1,0 +1,38 @@
+@include b(input) {
+    /*input样式覆盖*/
+    @include e(inner) {
+        height: 32px;
+        line-height: 32px;
+        font-size: 12px;
+    }
+    /*input-icon 样式覆盖*/
+    @include e(icon) {
+        line-height: 32px;
+    }
+}
+// .el-select .el-input {
+//     width: 130px;
+// }
+// .input-with-select .el-input-group__prepend {
+//     background-color: #fff;
+// }
+/*input textarea__inner样式覆盖*/
+// .el-textarea__inner:focus {
+//     outline: 0;
+//     border-color: #00C4C0;
+// }
+/*input样式覆盖*/
+// .el-input__inner {
+//     height: 32px;
+//     line-height: 32px;
+//     font-size: 12px;
+// }
+// .el-input.is-active .el-input__inner,
+// .el-input__inner:focus {
+//     border-color: #00C4C0;
+//     outline: 0;
+// }
+/*input-icon 样式覆盖*/
+// .el-input__icon {
+//     line-height: 32px;
+// }

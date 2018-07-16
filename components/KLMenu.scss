@@ -1,0 +1,87 @@
+@include b(submenu) {
+    .el-menu-item {
+        height: 40px;
+        line-height: 40px;
+    }
+
+    @include e(title) {
+        height: 54px;
+        line-height: 54px;
+        color: #333;
+        i {
+            color: #333;
+            font-size: 15px;
+        }
+        &:hover {
+            background-color: #fff;
+            color: #00C4C0;
+            i {
+                color: #00C4C0;
+            }
+        }
+    }
+}
+@include b(menu-item) {
+    height: 54px;
+    line-height: 54px;
+    color: #333;
+    &.is-active {
+        color: #fff;
+        background-color: #00C4C0;
+    }
+    &:hover {
+        color: #00C4C0;
+        background-color: #f6f9fc;
+    }
+    &:focus {
+        outline: 0;
+        color: #fff;
+        background-color: #00C4C0;
+    }
+}
+@include b(menu) {
+    .el-menu-item-group {
+        background-color: #f6f9fc;
+    }
+}
+// .el-submenu .el-menu-item {
+//     height: 40px;
+//     line-height: 40px;
+// }
+
+// .el-menu-item, .el-submenu__title {
+//     height: 54px;
+//     line-height: 54px;
+//     color: #333;
+// }
+// .el-submenu.is-opened .el-submenu__title,
+// .el-submenu.is-opened .el-submenu__title i {
+//     color: #00C4C0;
+// }
+// .el-submenu__title i {
+//     color: #333;
+//     font-size: 15px;
+// }
+// .el-submenu__title:hover {
+//     background-color: #fff;
+//     color: #00C4C0;
+// }
+// .el-menu .el-menu-item-group {
+//     background-color: #f6f9fc;
+// }
+// .el-menu-item.is-active {
+//     color: #fff;
+//     background-color: #00C4C0;
+// }
+// .el-submenu__title:hover i {
+//     color: #00C4C0;
+// }
+// .el-menu-item:hover {
+//     color: #00C4C0;
+//     background-color: #f6f9fc;
+// }
+// .el-menu-item:focus {
+//     outline: 0;
+//     color: #fff;
+//     background-color: #00C4C0;
+// }

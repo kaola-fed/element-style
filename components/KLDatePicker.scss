@@ -1,0 +1,86 @@
+
+@include b(picker-panel) {
+    color: #333;
+}
+/*时间选择的一些状态样式覆盖*/
+@include b(date-table) {
+    th {
+        padding: 2px;
+    }
+    td.today span {
+        color: #333;
+    }
+    td.available:hover span {
+        background: #80e2e0;
+        color: #444;
+    }
+    td span {
+        border-radius: 2px;
+    }
+}
+/*时间下拉框的大小*/
+@include b(date-picker) {
+    width: 260px;
+    &.has-sidebar {
+        width: 370px;
+    }
+    table {
+        width: 250px;
+        margin: 0 5px;
+    }
+    .el-picker-panel__content {
+        width: 260px;
+        margin: 0px;
+    }
+}
+// .el-picker-panel {
+//     color: #333;
+// }
+// .el-date-table td.today span {
+//     color: #00C4C0;
+//     font-weight: 700;
+// }
+// .el-date-table td.current:not(.disabled) span {
+//     color: #fff;
+//     background-color: #00C4C0;
+// }
+// .el-picker-panel__icon-btn:hover {
+//     color: #00C4C0;
+// }
+// .el-date-picker__header-label.active,
+// .el-date-picker__header-label:hover {
+//     color: #00C4C0;
+// }
+// .el-picker-panel__shortcut:hover {
+//     color: #00C4C0;
+// }
+// .el-date-table td.available:hover {
+//     color: #00C4C0;
+// }
+// .el-date-table td span {
+//     border-radius: 2px;
+// }
+// .el-date-table td.today span {
+//     color: #333;
+// }
+// .el-date-table td.available:hover span {
+//     background: #80e2e0;
+//     color: #444;
+// }
+// .el-date-picker {
+//     width: 260px;
+// }
+// .el-date-picker .el-picker-panel__content {
+//     width: 260px;
+//     margin: 0px;
+// }
+// .el-date-picker table {
+//     width: 250px;
+//     margin: 0 5px;
+// }
+// .el-date-table th {
+//     padding: 2px;
+// }
+// .el-date-picker.has-sidebar {
+//     width: 370px;
+// }
