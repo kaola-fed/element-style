@@ -27,6 +27,15 @@
             }
         }
     }
+
+    @include e(sizes) {
+        height: 30px;
+        line-height: 30px;
+        .el-select .el-input .el-input__inner {
+            height: 30px;
+            line-height: 30px;
+        }
+    }
 }
 /*样式覆盖*/
 // .el-pagination.is-background .btn-next,

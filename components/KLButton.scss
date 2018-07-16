@@ -3,7 +3,6 @@
     font-size: 12px;
     padding: 9px 16px;
     border-radius: 2px;
-    min-width: 80px;
 
     &:hover,
     &:focus {
@@ -48,9 +47,7 @@
     @include when(round) {
         line-height: 12px;
     }
-    @include when(circle) {
-        min-width: 0px;
-    }
+    
     /*危险累按钮样式覆盖*/
     @include m(danger) {
         &.is-plain {
@@ -63,6 +60,12 @@
                 border-color: #f97a7a;
                 color: #f97a7a;
             }
+        }
+        &:hover,
+        &:focus {
+            background: #f78989;
+            border-color: #f78989;
+            color: #fff;
         }
     }
     /*按钮size样式*/
@@ -103,6 +106,42 @@
             cursor: not-allowed;
             background-image: none;
             background-color: transparent;
+        }
+    }
+
+    @include m(primary) {
+        &:hover,
+        &:focus {
+            color: #fff;
+            background: #1acac6;
+            border-color: #1acac6;
+        }
+    }
+
+    @include m(success) {
+        &:hover,
+        &:focus {
+            color: #fff;
+            background: #85ce61;
+            border-color: #85ce61;
+        }
+    }
+
+    @include m(info) {
+        &:hover,
+        &:focus {
+            background: #a6a9ad;
+            border-color: #a6a9ad;
+            color: #fff;
+        }
+    }
+
+    @include m(warning) {
+        &:hover,
+        &:focus {
+            background: #ebb563;
+            border-color: #ebb563;
+            color: #fff;
         }
     }
 }

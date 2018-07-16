@@ -33,6 +33,23 @@
         margin: 0px;
     }
 }
+
+@include b(date-editor) {
+    .el-range__close-icon,
+    .el-range__icon {
+        line-height: 24px;
+    }
+    .el-range-separator {
+        line-height: 26px;
+    }
+
+    @include m(datetimerange) {
+        &.el-input__inner,
+        &.el-input {
+            width: 360px;
+        }
+    }
+}
 // .el-picker-panel {
 //     color: #333;
 // }

@@ -2,6 +2,9 @@
 @include b(table) {
     font-size: 12px;
 
+    @include e(header) {
+        border-bottom: 1px solid #E8E8E8;
+    }
     /* 将 .el-table thead th 添加背景色，将多级表头的背景色修改
     * 将表头的标题居中
     *  表头加上分割线

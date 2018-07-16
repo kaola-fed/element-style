@@ -13,4 +13,8 @@
         padding: 14px 12px 14px 0;
         font-size: 12px;
     }
+
+    @include e(content) {
+        line-height: 1;
+    }
 }
