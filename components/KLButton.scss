@@ -92,11 +92,12 @@
     }
     /*text样式覆盖*/
     @include m(text) {
+        color:#0398FF;
         &:hover,
         &:focus {
             background: transparent;
             border-color: transparent;
-            color: #21D1C8;
+            color: #66b1ff;
         }
         &.is-disabled,
         &.is-disabled:hover,

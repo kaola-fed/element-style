@@ -41,12 +41,13 @@
     }
     .el-range-separator {
         line-height: 26px;
+        width: 8%;
     }
 
     @include m(datetimerange) {
         &.el-input__inner,
         &.el-input {
-            width: 360px;
+            width: 100%;
         }
     }
 }
