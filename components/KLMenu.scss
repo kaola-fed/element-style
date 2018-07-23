@@ -2,6 +2,8 @@
     .el-menu-item {
         height: 40px;
         line-height: 40px;
+        background-color: #f6f9fc;
+
     }
 
     @include e(title) {
@@ -28,6 +30,10 @@
     &.is-active {
         color: #fff;
         background-color: #00C4C0;
+        &:hover {
+            color: #fff;
+            background-color: #00C4C0;
+        }
     }
     &:hover {
         color: #00C4C0;
