@@ -1,10 +1,11 @@
 @include b(breadcrumb) {
+    font-size: 12px;
     line-height: 40px;
     @include e(inner) {
         a,
         &.is-link {
             font-weight: 400;
-            color: #606266;
+            color: #333;
         }
     }
 
@@ -13,7 +14,7 @@
             .el-breadcrumb__inner,
             .el-breadcrumb__inner a {
                 font-weight: 700;
-                color: #303133;
+                color: #333;
             }
         }
 
