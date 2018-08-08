@@ -29,3 +29,8 @@ fieldset, img { border: none; } /* img 搭车：让链接里的 img 无边框 */
 table { border-collapse: collapse; border-spacing: 0; }
 /* 重置 hr */
 hr { border: none; height: 1px; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+}

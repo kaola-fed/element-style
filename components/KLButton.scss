@@ -93,6 +93,7 @@
     /*text样式覆盖*/
     @include m(text) {
         color:#0398FF;
+        font-weight: normal;
         &:hover,
         &:focus {
             background: transparent;
