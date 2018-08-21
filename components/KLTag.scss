@@ -7,6 +7,7 @@
     color: #333;
     border-radius: 20px;
     border-color: #e3e3e3;
+    padding: 0 14px;
 
     @include m(success) {
         color: white;
@@ -37,42 +38,13 @@
         background: #00C4C0;
         border-color: #00C4C0;
     }
+
+    .el-icon-close {
+        font-size: 14px;
+        color: #666;
+        &:hover {
+            background: #c0c4cc;
+            color: #fff;
+        }
+    }
 }
-// .el-tag {
-//     display: inline;
-//     font-weight: 700;
-//     text-align: center;
-//     text-decoration: none;
-//     padding: .2em .6em .3em;
-//     font-size: 12px;
-//     line-height: 1;
-//     background: #fff;
-//     color: #333;
-//     border-radius: 20px;
-//     border-color: #e3e3e3;
-// }
-// .el-tag-primary {
-//     color: white;
-//     background: #00C4C0;
-//     border-color: #00C4C0;
-// }
-// .el-tag--success {
-//     color: white;
-//     background: #93DD68;
-//     border-color: #93DD68;
-// }
-// .el-tag--info {
-//     background: #aaa;
-//     border-color: #aaa;
-//     color: white;
-// }
-// .el-tag--warning {
-//     color: white;
-//     background: #FFB539;
-//     border-color: #FFB539;
-// }
-// .el-tag--danger {
-//     color: white;
-//     background: #F86B6B;
-//     border-color: #F86B6B;
-// }
