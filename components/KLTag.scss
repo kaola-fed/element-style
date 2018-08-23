@@ -39,6 +39,9 @@
         border-color: #00C4C0;
     }
 
+    @include m(mini) {
+        line-height: 17px;
+    }
     .el-icon-close {
         font-size: 14px;
         color: #666;
