@@ -1,6 +1,6 @@
 {
   "name": "element-kaola",
-  "version": "3.0.11",
+  "version": "3.0.12",
   "description": "Custom styles for ElementUI",
   "scripts": {
     "release": "npm config set registry https://registry.npmjs.org && ./publish.sh"
