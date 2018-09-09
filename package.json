@@ -1,6 +1,6 @@
 {
   "name": "element-kaola",
-  "version": "3.0.15",
+  "version": "3.0.16",
   "description": "Custom styles for ElementUI",
   "scripts": {
     "release": "npm config set registry https://registry.npmjs.org && ./publish.sh",
@@ -30,8 +30,5 @@
     "gulp-cssmin": "^0.1.7",
     "gulp-sass": "^3.1.0",
     "gulp-autoprefixer": "^4.0.0"
-  },
-  "main": "index.css",
-  "style": "index.css",
-  "files": []
+  }
 }
