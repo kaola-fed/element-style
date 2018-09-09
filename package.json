@@ -1,10 +1,9 @@
 {
   "name": "element-kaola",
-  "version": "3.0.16",
+  "version": "3.0.17",
   "description": "Custom styles for ElementUI",
   "scripts": {
-    "release": "npm config set registry https://registry.npmjs.org && ./publish.sh",
-    "build": "gulp build"
+    "release": "npm config set registry https://registry.npmjs.org && ./publish.sh"
   },
   "repository": {
     "type": "git",
@@ -21,14 +20,9 @@
   },
   "homepage": "https://github.com/kaola-fed/element-style#readme",
   "dependencies": {
-    "element-ui": "^2.4.6",
     "node-sass": "^4.9.2",
     "postcss-salad": "^2.0.1",
     "sass": "^1.9.2",
-    "sass-loader": "^6.0.6",
-    "gulp": "^3.9.1",
-    "gulp-cssmin": "^0.1.7",
-    "gulp-sass": "^3.1.0",
-    "gulp-autoprefixer": "^4.0.0"
+    "sass-loader": "^6.0.6"
   }
 }
