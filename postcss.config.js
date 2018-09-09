@@ -1,7 +1,7 @@
 module.exports = {
     plugins: [
         require('postcss-import')({
-            path: './src/style'
+            path: './src/scss'
         }),
         require('postcss-salad')({
             browsers: ['ie > 9', 'last 2 versions'],
