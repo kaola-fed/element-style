@@ -19,7 +19,7 @@
     "url": "https://github.com/kaola-fed/element-style/issues"
   },
   "homepage": "https://github.com/kaola-fed/element-style#readme",
-  "dependencies": {
+  "devDependencies": {
     "node-sass": "^4.9.2",
     "postcss-salad": "^2.0.1",
     "sass": "^1.9.2",

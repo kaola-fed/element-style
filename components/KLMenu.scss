@@ -3,9 +3,6 @@
     .el-menu-item-group {
         background-color: #f6f9fc;
     }
-    .el-menu-item-group__title {
-        padding: 0 0 0 20px;
-    }
     @include m(dark) {
         color: rgba(255, 255, 255, 0.65);
         background-color: #222;
