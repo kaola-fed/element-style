@@ -1,6 +1,6 @@
 {
   "name": "element-kaola",
-  "version": "3.0.19",
+  "version": "3.0.20",
   "description": "Custom styles for ElementUI",
   "scripts": {
     "release": "npm config set registry https://registry.npmjs.org && ./publish.sh"
@@ -19,7 +19,7 @@
     "url": "https://github.com/kaola-fed/element-style/issues"
   },
   "homepage": "https://github.com/kaola-fed/element-style#readme",
-  "devDependencies": {
+  "dependencies": {
     "node-sass": "^4.9.2",
     "postcss-salad": "^2.0.1",
     "sass": "^1.9.2",
