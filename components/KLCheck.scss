@@ -10,6 +10,10 @@
             top: 4px;
         }
     }
+    @include e(label) {
+        font-size: 12px;
+        line-height: 16px;
+    }
     /*半选状态样式覆盖*/
     @include e(inner) {
         &::after {
