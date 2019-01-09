@@ -21,4 +21,9 @@
     @include e(content) {
         font-size: 12px;
     }
+    @include m(mini) {
+        .el-form-item__label {
+            padding: 0 12px 0 0;
+        }
+    }
 }
