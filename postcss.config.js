@@ -16,6 +16,9 @@ module.exports = {
                         descendent: '__',
                         modifier: '--'
                     }
+                },
+                autoprefixer: {
+                    remove: false,
                 }
             }
         })
