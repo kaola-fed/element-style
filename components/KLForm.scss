@@ -11,7 +11,13 @@
     }
 }
 @include b(form-item) {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
+    .el-input {
+        line-height: 32px;
+    }
+    .el-select__tags {
+        padding: 2px; line-height: 32px;
+    }
     @include e(label) {
         line-height: 1;
         padding: 14px 12px 14px 0;

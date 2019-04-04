@@ -31,6 +31,10 @@
     td, th {
         text-align: center;
         padding: 11px 0;
+
+        @include when(left) {
+            text-align: left;
+        }
     }
     /* 将 斑马的背景色修改 */
     @include m(striped) {
