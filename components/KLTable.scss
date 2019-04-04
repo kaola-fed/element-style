@@ -28,12 +28,22 @@
     }
     /* 将table每行的高度修改为40 */
     /* 将默认文字居中 */
-    td, th {
+    td {
         text-align: center;
         padding: 11px 0;
-
         @include when(left) {
             text-align: left;
+        }
+    }
+    th {
+        @include when(left) {
+            text-align: center;
+        }
+        @include when(right) {
+            text-align: center;
+        }
+        @include when(center) {
+            text-align: center;
         }
     }
     /* 将 斑马的背景色修改 */
