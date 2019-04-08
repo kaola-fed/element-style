@@ -39,4 +39,10 @@
       text-align: left;
     }
   }
+  @include when(controls-right) {
+    .el-input-number__decrease,
+    .el-input-number__increase {
+      line-height: 15px;
+    }
+  }
 }

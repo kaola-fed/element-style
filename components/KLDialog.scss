@@ -1,7 +1,8 @@
 @include b(dialog) {
     border-radius: 0px;
     padding-bottom: 0px;
-
+    background: #fff;
+    
     @include e(header) {
         padding: 15px 16px;
         border-bottom: 1px solid #eee;
