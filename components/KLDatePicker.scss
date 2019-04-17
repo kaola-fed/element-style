@@ -43,8 +43,46 @@
         line-height: 26px;
         width: 8%;
     }
+    
     &.el-input,
     &.el-input__inner {
         width: 100%;
     }
+
+    &.el-input--miniW.el-input,
+    &.el-input--miniW .el-input__inner {
+        width: 80px;
+    }
+    &.el-input--smallW.el-input,
+    &.el-input--smallW .el-input__inner {
+        width: 160px;
+    }
+    &.el-input--mediumW.el-input, 
+    &.el-input--mediumW .el-input__inner {
+        width: 300px;
+    }
+}
+
+@include b(range-editor) {
+
+  @include m(mediumW) {
+    &.el-input__inner {
+       width: 480px;
+    }
+
+  }
+
+  @include m(smallW) {
+    &.el-input__inner {
+      width: 400px;
+    }
+
+  }
+
+  @include m(miniW) {
+    &.el-input__inner {
+      width: 320px;
+    }
+
+  }
 }

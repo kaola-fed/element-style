@@ -1,6 +1,6 @@
 {
   "name": "element-kaola",
-  "version": "3.0.29",
+  "version": "3.0.30",
   "description": "Custom styles for ElementUI",
   "scripts": {
     "build": "gulp --gulpfile ./gulpfile.js",

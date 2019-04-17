@@ -1,6 +1,9 @@
 @include b(card) {
     border-radius: 0;
+    margin-bottom: 16px;
+    
     @include e(body) {
         padding: 24px;
     }
+
 }
