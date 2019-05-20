@@ -1,6 +1,6 @@
 {
   "name": "element-kaola",
-  "version": "3.0.31",
+  "version": "3.0.32",
   "description": "Custom styles for ElementUI",
   "scripts": {
     "build": "gulp --gulpfile ./gulpfile.js",
@@ -20,7 +20,8 @@
     "url": "https://github.com/kaola-fed/element-style/issues"
   },
   "homepage": "https://github.com/kaola-fed/element-style#readme",
-  "dependencies": {
+  "devDependencies": {
+    "node-sass": "^4.9.2",
     "postcss-salad": "^2.0.1",
     "sass": "^1.9.2",
     "sass-loader": "^6.0.6"
