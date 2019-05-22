@@ -28,7 +28,7 @@
     "node-sass": "^4.9.2",
     "sass": "^1.9.2",
     "sass-loader": "^6.0.6",
-    "glup": "^1.0.14",
+    "gulp": "^1.0.14",
     "gulp-clean-css": "^3.4.2",
     "gulp-css-rebase-urls": "0.0.5",
     "gulp-font-spider": "^0.3.6",
