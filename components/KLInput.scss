@@ -25,6 +25,19 @@
 @include b(input-number) {
   width: 100%;
   line-height: 32px;
+
+  @include m(medium) { 
+    @include e((increase, decrease)) {
+      height: 34px;
+    }
+  }
+  @include m(mini) { 
+    @include e((increase, decrease)) {
+      height: 26px;
+      line-height: 26px;
+      margin-top: 2px;
+    }
+  }
   @include e((increase, decrease)) {
     position: absolute;
     z-index: 1;
