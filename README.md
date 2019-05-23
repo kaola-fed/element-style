@@ -6,10 +6,11 @@
 
 需要安装
 node-sass,
-postcss-salad,
 sass,
 sass-loader
 等依赖
 按照nek-ui覆盖原element-ui的样式，使用的话直接按如下引入即可
+
 import 'element-kaola/index.scss'
 
+import 'element-kaola/index.css'
