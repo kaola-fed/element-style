@@ -6,7 +6,7 @@ const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const postcssConfig = require('./postcss.config');
 
-gulp.task('dist-css', () => {
+gulp.task('dist-css', async () => {
   gulp.src(path.join(__dirname, 'index.scss'))
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(postcssConfig.plugins))

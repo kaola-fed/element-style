@@ -711,10 +711,10 @@ $--breakpoints-spec: (
   'xl-only' : (min-width: $--xl),
 );
 /* 改变 icon 字体路径变量，必需 */
-// $--font-path: 'fonts';
+$--font-path: 'fonts';
 
-// @import "../node_modules/element-theme-chalk/src/index";
+@import "../node_modules/element-theme-chalk/src/index";
 
-$--font-path: '~element-ui/lib/theme-chalk/fonts';
+// $--font-path: '~element-ui/lib/theme-chalk/fonts';
 
-@import "~element-ui/packages/theme-chalk/src/index";
+// @import "~element-ui/packages/theme-chalk/src/index";

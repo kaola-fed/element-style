@@ -1,6 +1,6 @@
 {
   "name": "element-kaola",
-  "version": "3.0.38",
+  "version": "3.0.39",
   "description": "Custom styles for ElementUI",
   "scripts": {
     "build": "gulp dist-css",
@@ -24,18 +24,18 @@
     "postcss-salad": "^2.0.1"
   },
   "devDependencies": {
-    "element-theme-chalk": "^2.8.2",
-    "node-sass": "^4.9.2",
-    "sass": "^1.9.2",
-    "sass-loader": "^6.0.6",
-    "gulp": "^1.0.14",
-    "gulp-clean-css": "^3.4.2",
-    "gulp-css-rebase-urls": "0.0.5",
+    "element-theme-chalk": "^2.10.1",
+    "node-sass": "^4.12.0",
+    "sass": "^1.22.5",
+    "sass-loader": "^7.1.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-css-rebase-urls": "^0.0.5",
     "gulp-font-spider": "^0.3.6",
     "gulp-modify-css-urls": "^2.0.0",
-    "gulp-postcss": "^7.0.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
     "gulp-ttf2woff": "^1.1.1"
   }
 }
