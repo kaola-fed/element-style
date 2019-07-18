@@ -9,6 +9,15 @@
     border-color: #e3e3e3;
     padding: 0 14px;
 
+    .el-icon-close {
+        font-size: 14px;
+        color: #666;
+        &:hover {
+            background: #c0c4cc;
+            color: #fff;
+        }
+    }
+
     @include m(success) {
         color: white;
         background: #93DD68;
@@ -28,8 +37,8 @@
     }
 
     @include m(danger) {
-        color: white;
-        background: #F86B6B;
+        color: #F86B6B;
+        background: #fff;
         border-color: #F86B6B;
     }
 
@@ -37,17 +46,18 @@
         color: white;
         background: #00C4C0;
         border-color: #00C4C0;
+        .el-icon-close {
+            font-size: 14px;
+            color: #fff;
+            &:hover {
+                background: #c0c4cc;
+                color: #fff;
+            }
+        }
     }
 
     @include m(mini) {
         line-height: 17px;
     }
-    .el-icon-close {
-        font-size: 14px;
-        color: #666;
-        &:hover {
-            background: #c0c4cc;
-            color: #fff;
-        }
-    }
+    
 }
