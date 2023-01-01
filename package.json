@@ -27,7 +27,7 @@
     "element-theme-chalk": "^2.12.0",
     "node-sass": "^4.12.0",
     "sass": "^1.22.5",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "^13.2.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.2.0",
     "gulp-css-rebase-urls": "^0.0.5",
